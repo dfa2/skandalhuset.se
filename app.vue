@@ -1,5 +1,5 @@
 <template>
   <div>
-    <Splash />
+    <band-logo />
   </div>
 </template>
