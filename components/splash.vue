@@ -1,0 +1,113 @@
+  <template>
+    <div class="center-column">
+    <svg class="logo" width="100%" height="100%" viewBox="0 0 1460 1460" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+      <g id="Artboard1" transform="matrix(1.00697,0,0,1.00675,-524.655,-1033.03)">
+          <rect x="521.021" y="1026.1" width="1449.68" height="1449.68" style="fill:none;"/>
+          <g transform="matrix(0.993074,0,0,0.993293,18.6066,-31.492)">
+              <g id="Layer4">
+                  <circle cx="1237.1" cy="1796.71" r="724.841" style="fill:white;"/>
+              </g>
+          </g>
+          <g id="Layer1" transform="matrix(0.993074,0,0,0.993293,9.90492,13.9711)">
+              <path d="M1605.62,1792.17C1605.62,1792.17 1393.42,1717.24 1252.62,1409.88C1177.81,1493.37 1144.06,1569.91 868.574,1786.05C1040.76,1770.58 1397.66,1813.57 1397.66,1813.57C1397.66,1813.57 1400.72,1969.55 1437.42,2021.54C1474.12,2073.53 1272.27,1951.2 1042.9,2033.77C1061.25,1984.84 1091.83,1880.86 1036.78,1880.86" style="fill:none;stroke:black;stroke-width:61.22px;"/>
+              <path d="M1189.69,1942.02C1189.69,1942.02 1162.17,1691.24 1177.46,1633.13" style="fill:none;stroke:black;stroke-width:61.22px;"/>
+              <path d="M1284.5,1905.32C1284.5,1905.32 1266.15,1694.3 1272.27,1633.13" style="fill:none;stroke:black;stroke-width:61.22px;"/>
+          </g>
+          <g id="Layer3" transform="matrix(0.993074,0,0,0.993293,9.90492,13.9711)">
+              <g transform="matrix(1,0,0,1,-102.453,-102.453)">
+                  <g transform="matrix(0.360634,-0.932707,0.932707,0.360634,-1054.75,1931.44)">
+                      <text x="881.422px" y="1735.05px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:200px;">S</text>
+                  </g>
+                  <g transform="matrix(0.56676,-0.823883,0.823883,0.56676,-951.697,1466.12)">
+                      <text x="918.195px" y="1637.97px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:200px;">K</text>
+                  </g>
+                  <g transform="matrix(0.732425,-0.680847,0.680847,0.732425,-789.893,1082.14)">
+                      <text x="981.815px" y="1546.02px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:200px;">A</text>
+                  </g>
+                  <g transform="matrix(0.864148,-0.503238,0.503238,0.864148,-599.441,732.127)">
+                      <text x="1056.29px" y="1476.32px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:200px;">N</text>
+                  </g>
+                  <g transform="matrix(0.957526,-0.288346,0.288346,0.957526,-361.005,392.051)">
+                      <text x="1150.28px" y="1421.42px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:200px;">D</text>
+                  </g>
+                  <g transform="matrix(0.997733,-0.0672902,0.0672902,0.997733,-90.6789,87.7163)">
+                      <text x="1256.74px" y="1389.91px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:200px;">A</text>
+                  </g>
+                  <g transform="matrix(0.992097,0.125473,-0.125473,0.992097,184.385,-159.48)">
+                      <text x="1358.2px" y="1383.98px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:200px;">L</text>
+                  </g>
+                  <g transform="matrix(0.949602,0.313459,-0.313459,0.949602,508.516,-379.503)">
+                      <text x="1434.44px" y="1391.64px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:200px;">H</text>
+                  </g>
+                  <g transform="matrix(0.85057,0.525863,-0.525863,0.85057,980.44,-596.757)">
+                      <text x="1540.25px" y="1426.76px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:200px;">U</text>
+                  </g>
+                  <g transform="matrix(0.711828,0.702354,-0.702354,0.711828,1513.58,-719.353)">
+                      <text x="1633.42px" y="1484.83px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:200px;">S</text>
+                  </g>
+                  <g transform="matrix(0.55683,0.830626,-0.830626,0.55683,2050.6,-727.025)">
+                      <text x="1706.62px" y="1558.19px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:200px;">E</text>
+                  </g>
+                  <g transform="matrix(0.403133,0.915141,-0.915141,0.403133,2532.67,-633.79)">
+                      <text x="1752.21px" y="1624.71px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:200px;">T</text>
+                  </g>
+              </g>
+              <g transform="matrix(-1,-1.22465e-16,1.22465e-16,-1,2695.93,3729.6)">
+                  <g transform="matrix(-0.835197,-0.549951,0.549951,-0.835197,2507.06,3761.02)">
+                      <text x="1817.06px" y="1504.87px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:150px;">U</text>
+                  </g>
+                  <g transform="matrix(-0.930332,-0.366718,0.366718,-0.930332,2775.58,3408.76)">
+                      <text x="1711.58px" y="1440.74px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:150px;">P</text>
+                  </g>
+                  <g transform="matrix(-0.984522,-0.175263,0.175263,-0.984522,2932.7,3061.91)">
+                      <text x="1601.56px" y="1401.46px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:150px;">P</text>
+                  </g>
+                  <g transform="matrix(-0.999811,0.0194209,-0.0194209,-0.999811,2998.56,2740.42)">
+                      <text x="1485.97px" y="1384.77px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:150px;">S</text>
+                  </g>
+                  <g transform="matrix(-0.97597,0.217907,-0.217907,-0.97597,3004.4,2451.21)">
+                      <text x="1367.04px" y="1391.27px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:150px;">A</text>
+                  </g>
+                  <g transform="matrix(-0.917894,0.396825,-0.396825,-0.917894,2967.98,2228.53)">
+                      <text x="1253.44px" y="1421.31px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:150px;">L</text>
+                  </g>
+                  <g transform="matrix(-0.832295,0.554333,-0.554333,-0.832295,2943.65,2035.27)">
+                      <text x="1163.96px" y="1462.91px" style="font-family:'Impact', sans-serif;font-stretch:condensed;font-size:150px;">A</text>
+                  </g>
+              </g>
+              <g transform="matrix(1,0,0,1,243.879,-302.064)">
+                  <path d="M519.927,2268.5L536.921,2320.8L591.915,2320.8L547.424,2353.12L564.418,2405.43L519.927,2373.1L475.436,2405.43L492.43,2353.12L447.939,2320.8L502.933,2320.8L519.927,2268.5Z"/>
+              </g>
+              <g transform="matrix(0.624701,0,0,0.624701,367.019,336.805)">
+                  <path d="M519.927,2268.5L536.921,2320.8L591.915,2320.8L547.424,2353.12L564.418,2405.43L519.927,2373.1L475.436,2405.43L492.43,2353.12L447.939,2320.8L502.933,2320.8L519.927,2268.5Z"/>
+              </g>
+              <g transform="matrix(1,0,0,1,1235.44,-302.064)">
+                  <path d="M519.927,2268.5L536.921,2320.8L591.915,2320.8L547.424,2353.12L564.418,2405.43L519.927,2373.1L475.436,2405.43L492.43,2353.12L447.939,2320.8L502.933,2320.8L519.927,2268.5Z"/>
+              </g>
+              <g transform="matrix(0.624701,0,0,0.624701,1457.58,336.805)">
+                  <path d="M519.927,2268.5L536.921,2320.8L591.915,2320.8L547.424,2353.12L564.418,2405.43L519.927,2373.1L475.436,2405.43L492.43,2353.12L447.939,2320.8L502.933,2320.8L519.927,2268.5Z"/>
+              </g>
+          </g>
+      </g>
+  </svg>
+  </div>
+  </template>
+
+  <script lang="ts" setup>
+
+  </script>
+
+  <style>
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+  .center-column {
+    margin:auto;
+    width: 50%;
+    padding: 10px;
+  }
+  </style>
