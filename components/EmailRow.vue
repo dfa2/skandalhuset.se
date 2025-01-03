@@ -1,8 +1,12 @@
 <template>
   <div class="center-column">
-    <a href="mailto:info@skandalhuset.se">
+    <!--    <a href="mailto:info@skandalhuset.se"> -->
+      <a href="mailto:affe5000@hotmail.com">
       BOOK US!
-    </a>
+      </a>
+      Affe Kihlberg
+      affe5000@hotmail.com
+      
   </div>
 </template>
 
