@@ -3,7 +3,7 @@
   <div class="container-fluid ska-theme">
     <div class="content-wrapper">
       <header class="header-section text-center">
-        <h1 class="display-1">Skandalhuset</h1>
+        <img src="/public/band-logo.svg" alt="Skandalhuset Logo" class="band-logo">
         <p class="lead">High-energy ska from Uppsala, Sweden</p>
       </header>
       
@@ -96,9 +96,9 @@ html, body {
   background-image:
     repeating-conic-gradient(
       black 0deg 90deg, 
-      white 90deg 180deg,
+      grey 90deg 180deg,
       black 180deg 270deg,
-      white 270deg 360deg
+      grey 270deg 360deg
     );
   background-size: 50px 50px;
   position: fixed;
@@ -114,23 +114,10 @@ html, body {
   bottom: 0;
 }
 
-h1 {
-  font-family: 'Anton', sans-serif;
-  text-transform: uppercase;
-  font-size: 4rem;
-  letter-spacing: 2px;
-}
-
-.vibrating-text {
-  display: inline-block;
-  animation: vibrate-beat 1s infinite ease-in-out;
-}
-
-@keyframes vibrate-beat {
-  0%, 100% { transform: translateX(0) rotate(0); }
-  25% { transform: translateX(-1px) rotate(-0.5deg); }
-  50% { transform: translateX(1px) rotate(0.5deg); }
-  75% { transform: translateX(-0.5px) rotate(-0.25deg); }
+.band-logo {
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .social-icon img {
@@ -146,7 +133,7 @@ h1 {
 
 .external-link {
   margin-left: 5px;
-  vertical-align:baseline;
+  vertical-align: baseline;
   color: lightgray;
   text-decoration: none;
 }
@@ -154,7 +141,7 @@ h1 {
 .external-link i {
   font-size: 14px;
   color: lightgray;
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 .contact-btn {
