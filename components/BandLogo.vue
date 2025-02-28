@@ -88,15 +88,21 @@ img {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  padding: 20px;
+  padding: 0px;
 }
 
 .content-wrapper {
   max-width: 1200px;
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
-  padding: 50px;
+  padding: 20px;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 10px;
+  }
 }
 
 .checkerboard-header, .checkerboard-footer {
