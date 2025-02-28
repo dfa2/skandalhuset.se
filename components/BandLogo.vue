@@ -30,10 +30,10 @@
         <a href="https://instagram.com/skandalhuset.se" class="social-icon">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
         </a>
-        <a href="https://facebook.com/skandalhuset" class="social-icon">
+        <a href="https://www.facebook.com/pages/Skandalhuset/143274325736407/" class="social-icon">
           <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
         </a>
-        <a href="https://open.spotify.com/artist/skandalhuset" class="social-icon">
+        <a href="https://open.spotify.com/artist/1BkJLVSQagwzAlFionGKIk?si=E5hn-_mQR2Km4hRaLg3ShA" class="social-icon">
           <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">
         </a>
         <a href="https://skandalhuset.bandcamp.com" class="social-icon">
