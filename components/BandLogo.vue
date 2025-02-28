@@ -3,7 +3,7 @@
   <div class="container-fluid ska-theme">
     <div class="content-wrapper">
       <header class="header-section text-center">
-        <img src="/public/band-logo.svg" alt="Skandalhuset Logo" class="band-logo">
+        <img src="/images/band-logo.svg" alt="Skandalhuset Logo" class="band-logo">
         <p class="lead">High-energy ska from Uppsala, Sweden</p>
       </header>
       
@@ -68,13 +68,22 @@ html, body {
   text-align: center;
   overflow-x: hidden;
 }
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%; /* Prevents zooming on mobile */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .ska-theme {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('band.jpeg');
+  background-image: url('/images/band.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -112,6 +121,12 @@ html, body {
 
 .checkerboard-footer {
   bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .checkerboard-header, .checkerboard-footer {
+    height: 40px; /* Smaller headers on mobile */
+  }
 }
 
 .band-logo {
