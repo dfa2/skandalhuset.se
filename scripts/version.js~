@@ -1,0 +1,45 @@
+// scripts/version.js
+const fs = require('fs');
+const path = require('path');
+const { execSync } = require('child_process');
+
+const now = new Date();
+const year = now.getFullYear();
+const versionFile = path.resolve(__dirname, '../.version.json');
+
+// Load previous version data
+let data = { year, release: 0, lastCommitHash: '', commit: 0 };
+if (fs.existsSync(versionFile)) {
+  data = JSON.parse(fs.readFileSync(versionFile, 'utf-8'));
+}
+
+// Get current git HEAD commit hash
+const currentCommitHash = execSync('git rev-parse HEAD').toString().trim();
+
+// Reset if year changed
+if (data.year !== year) {
+  data.year = year;
+  data.release = 0;
+  data.commit = 0;
+  data.lastCommitHash = '';
+}
+
+// Increment release on each build
+data.release++;
+
+// Increment commit if changed
+if (data.lastCommitHash !== currentCommitHash) {
+  data.commit++;
+  data.lastCommitHash = currentCommitHash;
+}
+
+// Format version
+const version = `${data.year}.${data.release}.${data.commit}`;
+console.log('Build version:', version);
+
+// Save updated version data
+fs.writeFileSync(versionFile, JSON.stringify(data, null, 2));
+
+// Export to process.env for Nuxt
+const envFile = path.resolve(__dirname, '../.env.build');
+fs.writeFileSync(envFile, `NUXT_PUBLIC_BUILD_VERSION=${version}\n`);
