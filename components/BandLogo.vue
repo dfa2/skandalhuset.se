@@ -44,6 +44,8 @@
       <a href="mailto:info@skandalhuset.se" class="btn contact-btn">Book Us!</a>
       <a href="https://orcd.co/skandallaten" class="btn contact-btn">Pre-save Us on Spotify!</a>
     </section>
+    <p class="version">{{ config.public.buildVersion }}
+    </p>
   </div>
 </div>
 <div class="checkerboard-footer"/>
@@ -52,6 +54,8 @@
 <script setup>
   const { data: allContent } = await useAsyncData('allContent', () => queryContent().find());
   console.log("Fetched all content:", allContent);
+  
+  const config = useRuntimeConfig()
 </script>
 
 <style>
@@ -203,7 +207,19 @@ img {
 
 .gig-list ul {
     list-style: none;
-  padding: 0;
-  font-size: 1.5rem;
+    padding: 0;
+    font-size: 1.5rem;
 }
+
+.version {
+  color: gray;
+  font-size: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.version:hover {
+  opacity: 1;
+}
+
 </style>
