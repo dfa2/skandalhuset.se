@@ -1,5 +1,4 @@
 <template>
-<div class="checkerboard-header"/>
 <div class="container-fluid ska-theme">
   <div class="content-wrapper">
     <header class="header-section text-center">
@@ -22,7 +21,6 @@
         </li>
       </ul>
     </section>
-    
     
     <section class="social-links text-center py-5">
       <h2>Follow Us</h2>
@@ -48,7 +46,6 @@
     </p>
   </div>
 </div>
-<div class="checkerboard-footer"/>
 </template>
 
 <script setup>
@@ -116,7 +113,7 @@ img {
 .content-wrapper {
     max-width: 1200px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.3);
     padding: 20px;
     border-radius: 10px;
 }
