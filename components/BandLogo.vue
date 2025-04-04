@@ -10,7 +10,10 @@
       <h2>Upcoming Gigs</h2>
       <ul class="list-unstyled">
         <li>
-          May 24, 2025 - TBA, Stockholm
+          May 24, 2025 - Encore, Sundbyberg 
+          <a href="https://www.facebook.com/share/1BcJQ1ie3D/?mibextid=wwXIfr" target="_blank" class="external-link">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
         </li>
         <li>May 31, 2025 - Williams, Uppsala</li>
         <li>July 20, 2025 - Hope And Anchor, London</li>
