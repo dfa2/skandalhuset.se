@@ -41,6 +41,9 @@
       <a href="https://skandalhuset.bandcamp.com" class="social-icon">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Bandcamp-button-bc-circle-aqua.svg" alt="Bandcamp">
       </a>
+      <a href="https://www.youtube.com/@skandalhuset" class="social-icon" target="_blank">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube">
+      </a>
     </section>
     
     <section class="contact-links text-center py-5">
