@@ -5,6 +5,8 @@
       <img src="/images/band-logo.svg" alt="Skandalhuset Logo" class="band-logo">
       <p class="lead">High-energy ska from Uppsala, Sweden</p>
     </header>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/F6RRhUI55Nc?si=7pMXnyswnmwiKHLe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     
     <section class="gig-list text-center py-5">
       <h2>Upcoming Gigs</h2>
