@@ -16,7 +16,7 @@
         <ul v-if="gigs && gigs.length" class="list-unstyled">
           <li v-for="(gig, index) in gigs" :key="index">
             {{ gig.date }} - {{ gig.location }}
-            <a v-if="gig.link" :href="gig.link" target="_blank" class="external-link">
+            <a v-if="gig.link" :href="gig.link" target="_blank" rel="noopener noreferrer" class="external-link">
               <i class="fas fa-external-link-alt"></i>
             </a>
           </li>
@@ -26,19 +26,19 @@
 
       <section class="social-links text-center py-5">
         <h2>Follow Us</h2>
-        <a href="https://instagram.com/skandalhuset.se" class="social-icon" target="_blank">
+        <a href="https://instagram.com/skandalhuset.se" class="social-icon" target="_blank" rel="noopener noreferrer">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
         </a>
-        <a href="https://www.facebook.com/pages/Skandalhuset/143274325736407/" class="social-icon" target="_blank">
+        <a href="https://www.facebook.com/pages/Skandalhuset/143274325736407/" class="social-icon" target="_blank" rel="noopener noreferrer">
           <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
         </a>
-        <a href="https://open.spotify.com/artist/1BkJLVSQagwzAlFionGKIk?si=E5hn-_mQR2Km4hRaLg3ShA" class="social-icon" target="_blank">
+        <a href="https://open.spotify.com/artist/1BkJLVSQagwzAlFionGKIk?si=E5hn-_mQR2Km4hRaLg3ShA" class="social-icon" target="_blank" rel="noopener noreferrer">
           <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify" />
         </a>
-        <a href="https://skandalhuset.bandcamp.com" class="social-icon" target="_blank">
+        <a href="https://skandalhuset.bandcamp.com" class="social-icon" target="_blank" rel="noopener noreferrer">
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Bandcamp-button-bc-circle-aqua.svg" alt="Bandcamp" />
         </a>
-        <a href="https://www.youtube.com/@skandalhuset" class="social-icon" target="_blank">
+        <a href="https://www.youtube.com/@skandalhuset" class="social-icon" target="_blank" rel="noopener noreferrer">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" />
         </a>
       </section>
@@ -53,14 +53,29 @@
   </div>
 </template>
 
-<script setup>
-// Fetch gigs.json from GitHub
-const { data: gigs } = await useFetch('https://raw.githubusercontent.com/dfa2/skandalhuset.se/main/utils/giglist.json', {
-  default: () => '[]',
-  transform: (data) => JSON.parse(data)
-})
+<script setup lang="ts">
+type GigItem = { date?: string; location?: string; venue?: string; link?: string }
+type GigsResponse = GigItem[] | { gigs: GigItem[] }
 
-console.log('Parsed gigs:', gigs.value)
+// Fetch gigs.json from GitHub
+const { data: gigsRaw } = await useFetch<GigsResponse>('https://raw.githubusercontent.com/dfa2/skandalhuset.se/main/utils/giglist.json', {
+  default: () => [],
+  transform: (data: GigsResponse) => {
+    if (Array.isArray(data)) return data
+    if (data && typeof data === 'object' && 'gigs' in data && Array.isArray(data.gigs)) return data.gigs
+    return []
+  }
+})
+const gigs = computed(() => {
+  const raw = gigsRaw.value
+  if (!raw) return []
+  const list = Array.isArray(raw) ? raw : (raw?.gigs ?? [])
+  return list.map((g: GigItem) => ({
+    date: g.date,
+    location: g.location ?? g.venue ?? '',
+    link: g.link
+  }))
+})
 
 // Load runtime config (for version)
 const config = useRuntimeConfig()
