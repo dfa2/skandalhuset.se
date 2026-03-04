@@ -3,6 +3,7 @@ import { config } from 'dotenv'
 config({ path: '.env.build' })
 
 export default defineNuxtConfig({
+    css: ['~/assets/css/global.css'],
     runtimeConfig: {
 	public: {
 	    buildVersion: process.env.NUXT_PUBLIC_BUILD_VERSION
