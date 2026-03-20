@@ -45,7 +45,7 @@
 
       <section class="contact-links text-center py-5">
         <a href="mailto:info@skandalhuset.se" class="btn contact-btn">Book Us!</a>
-        <a href="https://orcd.co/skandallaten" class="btn contact-btn">Pre-save Us on Spotify!</a>
+        <a href="https://orcd.co/iksirius" class="btn contact-btn">Pre-save Us on Spotify!</a>
       </section>
 
       <p class="version">{{ config.public.buildVersion }}</p>
@@ -54,23 +54,20 @@
 </template>
 
 <script setup lang="ts">
-type GigItem = { date?: string; location?: string; venue?: string; link?: string }
-type GigsResponse = GigItem[] | { gigs: GigItem[] }
-
 // Fetch gigs.json from GitHub
-const { data: gigsRaw } = await useFetch<GigsResponse>('https://raw.githubusercontent.com/dfa2/skandalhuset.se/main/utils/giglist.json', {
+const { data: gigsRaw } = await useFetch('https://raw.githubusercontent.com/dfa2/skandalhuset.se/main/utils/giglist.json', {
   default: () => [],
-  transform: (data: GigsResponse) => {
+  transform: (data: any) => {
     if (Array.isArray(data)) return data
-    if (data && typeof data === 'object' && 'gigs' in data && Array.isArray(data.gigs)) return data.gigs
-    return []
+    if (data && typeof data === 'object' && Array.isArray((data as any).gigs)) return (data as any).gigs
+    return typeof data === 'string' ? JSON.parse(data || '[]') : []
   }
 })
 const gigs = computed(() => {
   const raw = gigsRaw.value
   if (!raw) return []
   const list = Array.isArray(raw) ? raw : (raw?.gigs ?? [])
-  return list.map((g: GigItem) => ({
+  return list.map((g: { date?: string; location?: string; venue?: string; link?: string }) => ({
     date: g.date,
     location: g.location ?? g.venue ?? '',
     link: g.link
@@ -114,12 +111,14 @@ img {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('/images/band.jpeg');
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('/images/band.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  padding: 0px;
+  padding: 0;
 }
 
 /* Content */
